@@ -14,6 +14,7 @@ func init() {
 	userFlagsFile = xattribs.FileNS{thisFile, "user.flags"}
 }
 
+// FlagSet persists/completes the passed flag.FlagSet
 func FlagSet(fs *flag.FlagSet) {
 	fs.VisitAll(func(f *flag.Flag) {
 		bs, err := userFlagsFile.Get(f.Name)
