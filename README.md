@@ -1,11 +1,13 @@
 
-  * flag - command line flags
+#persist
+
+  * flag - command line flags.
 
 example:
 
 	...
 	flag.Parse()
-	persist.FlagSet(flag.CommandLine)  // added line: so flags parsed above are completed using stored attribs, and updated/added as needed.
+	persist.FlagSet(flag.CommandLine)  // added line: default FlagSet has any missing flags filled in with stored values, any included flags are added/updated to the store.
 	...
 	
 installation:
