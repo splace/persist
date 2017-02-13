@@ -1,6 +1,7 @@
 
 #persist
 
+  * interface - save/load anything.(binary or textually as one field per tag) (in development)
   * flag - command line flags.
 
 example:
