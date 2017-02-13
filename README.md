@@ -1,14 +1,16 @@
 
   * flag - command line flags
-  
- example:
- 
- 	flag.Parse()
+
+example:
+
+	...
+	flag.Parse()
 	persist.FlagSet(flag.CommandLine)  // added line: so flags parsed above are completed using stored attribs, and updated/added as needed.
+	...
 	
 installation:
 
-     go get github.com/splace/persist
+	go get github.com/splace/persist
      
 
 docs: 
